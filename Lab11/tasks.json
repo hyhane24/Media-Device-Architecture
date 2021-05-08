@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build run",
+            "type": "shell",
+            "command": "open /Users/haneyie/Desktop/CS2261/./test.exe",
+            "problemMatcher": [],
+            "dependsOn": [
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc *.c -o test",
+            "problemMatcher": []
+        },
+    ]
+}
